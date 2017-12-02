@@ -3,13 +3,13 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(attendees)
-  batch_badge = []
-  attendees.each {|attendee| batch_badge << badge_maker(attendee)}
-  batch_badge
+  attendees.collect {|attendee| badge_maker(attendee)}
 end
 
 def assign_rooms(attendees)
-
+  room_assignments = []
+  attendees.each {|attendee| room_assignments << "Hello, #{attendee}! You'll be assigned to room "}
+  room_assignments
 end
 
 def printer(attendees)
