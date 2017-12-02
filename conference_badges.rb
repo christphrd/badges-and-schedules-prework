@@ -7,3 +7,11 @@ def batch_badge_creator(names)
   names.each {|name| batch_badge << badge_maker(name)}
   batch_badge
 end
+
+def assign_rooms
+  
+end
+
+def printer
+  
+end
